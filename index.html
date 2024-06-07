@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,80 +10,423 @@
     <!-- Css's -->
     <link rel="stylesheet" href="src/bootstrap-5.3.3-dist/css/bootstrap.css">
 
+    <!-- CDN's -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     
     
     <title>Influence - English course</title>
   </head>
-  <body data-bs-theme="dark">
+  <body >
     
-    <header class="container" >
+    <header>
+      <div class="container">
 
-      <nav class="navbar navbar-expand-lg rounded" aria-label="Thirteenth navbar example">
-        <div class="container-fluid">
-          <a class="d-md-flex d-lg-none navbar-brand col-lg-3 me-0" href="#"><img src="src/images/icons/influence-icon32x32.png" alt="Logo" width="30" height="24" class="d-inline-block">Influence</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
-            <a class="d-none d-lg-flex align-items-center gap-1 navbar-brand col-lg-3 me-0" href="#"><img src="src/images/icons/influence-icon32x32.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Influence</a>
-
-            <ul class="navbar-nav col-lg-6  justify-content-lg-center">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Contato</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sobre</a>
-                <ul class="dropdown-menu mb-2 mb-md-3 mb-lg-0">
-                  <li><a class="dropdown-item" href="#">Quem somos</a></li>
-                  <li><a class="dropdown-item" href="#">Professores</a></li>
-                  <li><a class="dropdown-item" href="#">Métodos</a></li>
-                  <li><a class="dropdown-item" href="#">Estrutura</a></li>
-                  <li><a class="dropdown-item" href="#">Depoimentos</a></li>
-                  <li><a class="dropdown-item" href="#">Galeria</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-              <button class="btn btn-primary" disabled>Log in</button>
+        <nav class="navbar nav-underline navbar-expand-lg rounded" aria-label="Thirteenth navbar example">
+          <div class="container-fluid">
+            <a class="d-md-flex d-lg-none navbar-brand col-lg-3 me-0" href="#"><img src="src/images/icons/influence-icon32x32.png" alt="Logo" width="30" height="24" class="d-inline-block">Influence</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+              <a class="d-none d-lg-flex align-items-center gap-1 navbar-brand col-lg-3 me-0" href="#"><img src="src/images/icons/influence-icon32x32.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Influence</a>
+  
+              <ul class="navbar-nav mb-3 mb-md-0 col-lg-6 d-flex gap-md-3 justify-content-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Contato</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sobre</a>
+                  <ul class="dropdown-menu mb-2 mb-md-3 mb-lg-0">
+                    <li><a class="dropdown-item" href="#about-us">Quem somos</a></li>
+                    <li><a class="dropdown-item" href="#teachers">Professores</a></li>
+                    <li><a class="dropdown-item" href="#structure">Estrutura</a></li>
+                    <li><a class="dropdown-item" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="dropdown-item" href="#galery">Galeria</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                <button class="btn btn-primary" disabled>Log in</button>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+
+      </div>
+      
 
     </header>
       
     <main>
-      <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="src/images/Sala-influence.webp" class="d-block w-100" alt="...">
+
+      <section id="carousel">
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-item">
-            <img src="src/images/turma-influence.jpg" class="d-block w-100" alt="...">
+
+          <div class="carousel-inner" >
+
+            <div class="carousel-item active">
+              <img src="src/images/Sala-influence.webp" class="d-flex w-100 " style="height: 60vh;" alt="...">
+              <div class="carousel-caption d-none d-md-block text-start">
+                  <h1>Desbloqueie a fluência, explore culturas.</h1>
+                  <p class="opacity-75">Bem-vindo à Influence! Nossa missão é proporcionar a você uma jornada envolvente e eficaz para dominar o idioma inglês. Explore novas culturas, aprimore suas habilidades de comunicação e alcance a fluência com nossos cursos personalizados e professores experientes.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="src/images/Sala-influence.webp" class="d-block w-100" style="height: 60vh;" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Aprenda, Pratique, Domine.</h1>
+                  <p class="opacity-75">Nosso curso abrangente de inglês é projetado para todos os níveis, desde iniciantes até avançados. Com aulas interativas, materiais autênticos e suporte individualizado, você desenvolverá habilidades sólidas de leitura, escrita, audição e fala.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
+            
+            <div class="carousel-item">
+              <img src="src/images/Sala-influence.webp" class="d-flex w-100" style="height: 60vh;" alt="...">
+              <div class="carousel-caption d-none d-md-block text-end">
+                <h1>Fale como um Nativo.</h1>
+                  <p class="opacity-75">Quer aprimorar suas habilidades de conversação em inglês? Mergulhe em diálogos autênticos, debates estimulantes e práticas interativas. Nossos instrutores apaixonados o ajudarão a ganhar fluência e confiança para se expressar com naturalidade. Vamos começar essa jornada juntos!</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="src/images/Sala-influence.webp" class="d-block w-100" alt="...">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </section>
+
+      <section id="about-us" >
+        <div class="container col-xxl-8 px-4 py-5 " >
+          <div class="row flex-lg-row-reverse align-items-center rounded px-4 py-4">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="src/images/icons/influence-icon192x192.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Quem somos</h1>
+              <p class="lead">A InFluence nasceu em 2012, fundada por Alan, Jack e André, experientes professores de inglês. Inicialmente, a empresa oferecia seus serviços exclusivamente dentro das firmas, atendendo aos funcionários que desejavam aprender inglês. Durante suas aulas em empresas, a InFluence teve seu início. O nome e a logomarca foram cuidadosamente concebidos e desenhados pelo publicitário Bruno Cezar, amigo pessoal de Alan.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Saiba mais</button>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </main>
-    
-    <footer>
+      </section>
+
+      <section id="teachers" >
+        <div class="container px-4 py-5 d-column-flex justify-content-center">
+
+          <h1 class="display-5 mb-4 text-center fw-bold text-body-emphasis lh-1 mb-3">Professores</h1>
+          
+          <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-example m-0 border-0">
+              
+                  <nav>
+                    <div class="nav nav-tabs d-flex gap-2 justify-content-center mb-3" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-jay-tab" data-bs-toggle="tab" data-bs-target="#nav-jay" type="button" role="tab" aria-controls="nav-jay" aria-selected="false" tabindex="-1">Teacher Jay</button>
+
+                      <button class="nav-link" id="nav-phael-tab" data-bs-toggle="tab" data-bs-target="#nav-phael" type="button" role="tab" aria-controls="nav-phael" aria-selected="false" tabindex="-1">Teacher Phael</button>
+
+                      <button class="nav-link " id="nav-vivi-tab" data-bs-toggle="tab" data-bs-target="#nav-vivi" type="button" role="tab" aria-controls="nav-vivi" aria-selected="true">Estagiária Vivi</button>
+                      
+                      <button class="nav-link " id="nav-alan-tab" data-bs-toggle="tab" data-bs-target="#nav-alan" type="button" role="tab" aria-controls="nav-alan" aria-selected="true">Teacher Alan</button>
+                      
+                      <button class="nav-link " id="nav-rafa-tab" data-bs-toggle="tab" data-bs-target="#nav-rafa" type="button" role="tab" aria-controls="nav-rafa" aria-selected="true">Teacher Rafa</button>
+
+                      <button class="nav-link " id="nav-naym-tab" data-bs-toggle="tab" data-bs-target="#nav-naym" type="button" role="tab" aria-controls="nav-naym" aria-selected="true">Teacher Naym</button>
+                    </div>
+                  </nav>
+
+                  <div class="tab-content shadow" id="nav-tabContent">
+
+                    <div class="tab-pane fade active show" id="nav-jay" role="tabpanel" aria-labelledby="nav-jay-tab">
+
+                      <div class="card mb-3">
+                        <div class="row g-0">
+
+                          <div class="col-md-2">
+                            <img src="src/images/imagem-pessoal.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+
+                          <div class="col-md-10">
+                            <div class="card-body">
+                              <h5 class="card-title">Jay</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-phael" role="tabpanel" aria-labelledby="nav-phael-tab">
+                      
+                      <div class="card mb-3">
+                        <div class="row g-0">
+
+                          <div class="col-md-2">
+                            <img src="src/images/imagem-pessoal.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+
+                          <div class="col-md-10">
+                            <div class="card-body">
+                              <h5 class="card-title">Phael</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-vivi" role="tabpanel" aria-labelledby="nav-vivi-tab">
+                      
+                      <div class="card mb-3">
+                        <div class="row g-0">
+
+                          <div class="col-md-2">
+                            <img src="src/images/imagem-pessoal.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+
+                          <div class="col-md-10">
+                            <div class="card-body">
+                              <h5 class="card-title">Vivi</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-alan" role="tabpanel" aria-labelledby="nav-alan-tab">
+                      
+                      <div class="card mb-3">
+                        <div class="row g-0">
+
+                          <div class="col-md-2">
+                            <img src="src/images/imagem-pessoal.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+
+                          <div class="col-md-10">
+                            <div class="card-body">
+                              <h5 class="card-title">Alan</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-rafa" role="tabpanel" aria-labelledby="nav-rafa-tab">
+                      
+                      <div class="card mb-3">
+                        <div class="row g-0">
+
+                          <div class="col-md-2">
+                            <img src="src/images/imagem-pessoal.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+
+                          <div class="col-md-10">
+                            <div class="card-body">
+                              <h5 class="card-title">Rafa</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-naym" role="tabpanel" aria-labelledby="nav-naym-tab">
+                      
+                      <div class="card mb-3">
+                        <div class="row g-0">
+
+                          <div class="col-md-2">
+                            <img src="src/images/imagem-pessoal.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+
+                          <div class="col-md-10">
+                            <div class="card-body">
+                              <h5 class="card-title">Naym</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                  </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section id="structure" class="bg-body-secondary">
+        <div class="container px-4 py-5">
+          <div class="row row-cols-1 text-center mb-4">
+            <h1 class="display-5 text-center fw-bold text-body-emphasis lh-1 mb-3">Estrutura</h1>
+            
+          </div>
+          
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+            <div class="col">
+              <div class="card h-100 shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-snowflake fa-2xl mb-5 mt-4"></i>
+                  <h5 class="card-title">Salas Climatizadas</h5>
+                  <p class="card-text">Todas as nossas salas são climatizadas para manter sempre o maior padrão de conforto para os nossos aluno.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-award fa-2xl mb-5 mt-4"></i>
+                  <h5 class="card-title">Certificação</h5>
+                  <p class="card-text">Nossos certificados são validos para qualquer parte do Brasil e do mundo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-headset fa-2xl mb-5 mt-4"></i>
+                  <h5 class="card-title">EAD</h5>
+                  <p class="card-text">Nossas aulas não são restritas apenas às salas de aula tendo flexibilidade para aulas à distância.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <div class="card-body">
+                  <i class="fa-solid fa-clapperboard fa-2xl mb-5 mt-4"></i>
+                  <h5 class="card-title">Filmes</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+      </section>
+
+      <section id="testimonials">
+        <div class="container py-5 px-4">
+
+        </div>
+      </section>
       
-    </footer>
+    </main>
+        
+    <footer class="bg-secondary-subtle">
+      <div class="container py-5 pt-5">
+        <div class="row">
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Inicio</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Inicio</a></li>
+            </ul>
+          </div>
     
+          <div class="col-6 col-md-2 mb-3">
+
+            <h5>Contato</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Facebook</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Whatsapp</a></li>
+            </ul>
+
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+
+            <h5>Sobre</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Quem Somos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Professores</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Estrutura</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Depoimentos</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Galeria</a></li>
+            </ul>
+
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+
+            <img class="mb-3" src="src/images/icons/influence-icon32x32.png" alt="">
+            <h5>Faça Log in para acessar sua conta</h5>
+            <p>Tenha acesso a todos os seus dados ao acessar sua conta pelo botão abaixo.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <button class="btn btn-primary" type="button" disabled>Log in</button>
+            </div>
+
+        </div>
+
+        </div>
+    
+        <div class="pt-4 gap-3 d-flex flex-column flex-sm-row justify-content-between border-top">
+
+          <!-- Nome Comercial: InFluence. Razão Social: AJM Curso de Idiomas Ltda ME. Endereço Comercial: Rua Rio da Prata, 245, Bangu, salas 203, 204, 205 e 206 - Rio de Janeiro, RJ - CEP 21820096. CNPJ: 00.958.038/0001-71. Tempo estimado de entrega dos produtos: Serviços serão prestados presencialmente em data de início de aulas, não mais que dois meses após a matrícula. Email: influenceidiomas@gmail.com. Telefone: (21) 3464-6275. -->
+          
+          <p>© <span>2024</span> Developed by <a class="link-body-emphasis" href="#">Bernardo Garcia</a> for Influence. All rights reserved. Acesse as nossas <a class="link-body-emphasis" href="#">Politicas de privacidade
+          </a></p>
+          
+          <ul class="list-unstyled d-flex gap-3 align-items-center">
+
+            <li>
+              <a class="link-body-emphasis" href="#">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a class="link-body-emphasis" href="#" width="24" height="24">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a class="link-body-emphasis" href="#">
+                <i class="fa-brands fa-whatsapp fa-2xl"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </footer>
+
     <!-- Javascript -->
     <script src="src/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
   </body>
